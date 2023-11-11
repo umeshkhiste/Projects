@@ -1,10 +1,14 @@
 import React from "react"
+import { Card, CardBody } from "reactstrap";
 
 function Header({name, title}){
     return(
-    <div style={{background:"skyblue", padding:10, width:250}}>
-        <h1> {name}</h1>
-        <h1> {title}</h1>
+    <div>
+        <Card className="my-2">
+            <CardBody>
+                <h1 className="text-center my-1">Welcome to Courses Application</h1>
+            </CardBody>
+        </Card>
     </div>
     );
 }
